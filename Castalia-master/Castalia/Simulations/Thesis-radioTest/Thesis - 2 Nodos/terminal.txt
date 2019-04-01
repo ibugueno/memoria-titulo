@@ -1,0 +1,2 @@
+../../bin/Castalia -c oneNodeVaryRate,[TMAC,SMAC,SlottedAloha,ZigBeeMAC][GTSon,GTSoff] -r 7
+

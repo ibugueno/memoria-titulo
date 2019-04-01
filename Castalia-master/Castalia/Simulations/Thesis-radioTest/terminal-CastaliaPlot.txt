@@ -1,0 +1,20 @@
+
+
+MAC Comparison Pkts received per node
+
+../../bin/CastaliaResults -i 181218-120935.txt -s node | ../../bin/CastaliaPlot -o MAC-comparison-Pkts-received-per-node.png -l bottom
+
+
+Latency
+
+../../bin/CastaliaResults -i 181218-120935.txt -s latency -f distance=30 | ../../bin/CastaliaPlot -o latency-distance-30.png --yrange 1800 --xrotate 90 -s histogram
+
+
+RX Pkt breakdown 
+
+../../bin/CastaliaResults -i 181218-120935.txt -s RX -f distance=10,node=0 -p -n | ../../bin/CastaliaPlot -o RX-pkt-breakdown-distance-10.jpg -s stacked -l "outside width-7" --yrange 1.05 --colors g,r,pi,b --xrotate 90
+
+
+Reception rate 
+/../bin/CastaliaResults -i 181218-120935.txt -s 'reception rate' | ../../bin/CastaliaPlot -o Reception-rate.jpg -l bottom
+
